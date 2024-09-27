@@ -1,0 +1,297 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply transition-all duration-150;
+    @apply transition-colors duration-[50ms];
+}
+table{
+    table-layout: auto!important;
+}
+:root {
+    --color-brand01: theme('colors.brand01.DEFAULT');
+    --color-brand02: theme('colors.brand02.DEFAULT');
+    --color-neutrals-50: theme('colors.neutrals.50');
+    --color-neutrals-100: theme('colors.neutrals.100');
+    --color-neutrals-200: theme('colors.neutrals.200');
+    --color-neutrals-300: theme('colors.neutrals.300');
+    --color-neutrals-400: theme('colors.neutrals.400');
+    --color-neutrals-500: theme('colors.neutrals.500');
+    --color-neutrals-900: theme('colors.neutrals.900');
+    --color-semantics-grey01: theme('colors.semantics.grey01');
+    --color-semantics-grey02: theme('colors.semantics.grey02');
+    --color-semantics-green02: theme('colors.semantics.green02');
+    --color-border-gradient-from: theme('colors.greenFrom');
+    --color-border-gradient-to: theme('colors.greenTo');
+    --color-accent01: theme('colors.accent.a01');
+    --color-dark-3838-important: theme('colors.darkGrey.3838-important');
+    --color-dark-2E2E: theme('colors.darkGrey.2E2E');
+    --color-dark-2C2C: theme('colors.darkGrey.2C2C');
+    --color-dark-3636: theme('colors.darkGrey.3636');
+    --color-dark-2727: theme('colors.darkGrey.2727');
+    --color-darkGrey: theme('colors.darkGrey.2C2C');
+    --color-box-shadow: #00000026;
+}
+
+.dark {
+    /*background-color: var(--color-darkGrey);*/
+    /*color: var(--color-neutrals-500);*/
+}
+
+.placeholder-dark input::placeholder {
+    color: var(--color-semantics-grey02) !important; /* Example color for dark mode */
+}
+
+.border-dark {
+    border-color: var(--color-dark-2E2E) !important; /* Example color for dark mode */
+}
+
+.placeholder-dark .ant-select-selection-placeholder {
+    color: var(--color-neutrals-400) !important; /* Example color for dark mode */
+}
+
+.border-dark .ant-select-selector {
+    border-color: var(--color-dark-2E2E) !important; /* Example color for dark mode */
+}
+
+
+.placeholder-light::placeholder {
+    color: #808080; /* Example color for light mode */
+}
+/*custom css item*/
+.sub-item-manage-menu-left-line {
+    border: 2px solid var(--color-neutrals-300);
+    left: 0;
+    height: 71px;
+    top: -30px;
+    width: 40px;
+    border-radius: 0 0 0 8px;
+    border-top: none;
+    border-right: none;
+}
+
+.sub-item-manage-menu-left:nth-child(1) .sub-item-manage-menu-left-line {
+    top: 0;
+    height: 40px;
+}
+
+/*config border-radius using gradient color for item*/
+.action-item-button-gradient {
+}
+
+.action-item-button-gradient::after {
+}
+
+
+/*end config border-radius using gradient color for item*/
+
+/*end custom css item*/
+#add-new-product-container .control-add-product .ant-select-selector {
+    border: none;
+}
+
+/*toggle button*/
+.switch-root-medium .switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch-root-medium .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.switch-root-medium .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-neutrals-100);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switch-root-medium .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--color-neutrals-50);
+    box-shadow: 0 3px 8px 0 var(--color-box-shadow);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switch-root-medium input:checked + .slider {
+    background-color: var(--color-semantics-green02);
+}
+
+.switch-root-medium input:focus + .slider {
+    box-shadow: 0 0 1px var(--color-border-gradient-from);
+}
+
+.switch-root-medium input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.switch-root-medium .slider.round {
+    border-radius: 34px;
+}
+
+.switch-root-medium .slider.round:before {
+    border-radius: 50%;
+}
+
+/*end toggle button*/
+
+
+/*scroll color*/
+/* Add this to your CSS file */
+* {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: var(--color-accent01) #EBEBEF; /* For Firefox */
+}
+
+/* For WebKit browsers */
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-accent01);
+    border-radius: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #EBEBEF;
+    border-radius: 6px;
+}
+
+/*scroll color*/
+/*switch small*/
+.switch-root-small .switch {
+    position: relative;
+    display: inline-block;
+    width: 47px;
+    height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch-root-small .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.switch-root-small .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-neutrals-400);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switch-root-small .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--color-neutrals-50);
+    box-shadow: 0 3px 8px 0 var(--color-box-shadow);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switch-root-small input:checked + .slider {
+    background-color: var(--color-border-gradient-from);
+}
+
+.switch-root-small input:focus + .slider {
+    box-shadow: 0 0 1px var(--color-border-gradient-from);
+}
+
+.switch-root-small input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.switch-root-small .slider.round {
+    border-radius: 34px;
+}
+
+.switch-root-small .slider.round:before {
+    border-radius: 50%;
+}
+
+/*end switch small*/
+
+/*editor*/
+/*rsw-editor (root container)*/
+/*rsw-ce (editable area)*/
+/*rsw-toolbar*/
+/*rsw-btn*/
+/*rsw-separator*/
+/*rsw-dd (drop down list)*/
+#add-new-product-container .rsw-editor {
+    min-height: 70vh;
+}
+
+#add-new-product-container .rsw-toolbar {
+    background-color: white;
+    border-bottom: none;
+}
+
+#update-product-container .rsw-editor {
+    min-height: 70vh;
+}
+
+#update-product-container .rsw-toolbar {
+    background-color: white;
+    border-bottom: none;
+}
+
+/*editor*/
+
+
+/*button ant custom*/
+.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    color: var(--color-semantics-grey01);
+    border-color: var(--color-neutrals-300);
+    background-color: var(--color-neutrals-200);
+}
+
+/*end button ant button*/
+
+/*input ant custom*/
+.ant-input-affix-wrapper .ant-input-clear-icon{
+    font-size: 16px;
+}
+.ant-select-clear {
+    font-size: 16px!important;
+}
+
+.ant-select-clear:hover {
+    font-size: 16px!important;
+}

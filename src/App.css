@@ -1,0 +1,4 @@
+.ant-btn:disabled span.ant-btn-icon svg{
+    fill: transparent!important;
+    stroke: white!important;
+}

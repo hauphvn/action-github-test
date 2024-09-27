@@ -1,0 +1,9 @@
+#filter-product-light-mode-root .ant-slider-track,
+#filter-product-light-mode-root .ant-slider-rail {
+    height: 2px;
+}
+
+#filter-product-dark-mode-root .ant-slider-track,
+#filter-product-dark-mode-root .ant-slider-rail {
+    height: 2px;
+}

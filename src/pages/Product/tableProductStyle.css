@@ -1,0 +1,176 @@
+table .ant-table-thead tr > th {
+    display: flex;
+    justify-content: center;
+}
+
+.ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before, .ant-table-wrapper .ant-table-thead > tr > td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    display: none;
+}
+
+table .ant-table-thead > tr {
+    display: flex;
+    column-gap: 24px;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+table .ant-table-thead > tr > th {
+    padding: 0 !important;
+}
+
+table .ant-table-thead > tr > th:nth-child(1) {
+    min-width: 10.82%;
+    padding-left: 10px;
+}
+
+table .ant-table-thead > tr > th:nth-child(2) {
+    min-width: 25.6%;
+}
+
+table .ant-table-thead > tr > th:nth-child(3) {
+    min-width: 19.49%;
+
+}
+
+table .ant-table-thead > tr > th:nth-child(4) {
+    min-width: 10.82%;
+}
+
+table .ant-table-thead > tr > th:nth-child(5) {
+    min-width: 24.25%;
+}
+
+table .ant-table-tbody {
+    display: flex;
+    flex-direction: column;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+
+#table-product-light-mode table .ant-table-tbody .ant-table-row-level-0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-neutrals-300);
+    border-radius: 8px !important;
+    margin-top: 24px;
+}
+#table-product-dark-mode table .ant-table-tbody .ant-table-row-level-0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-dark-2E2E);
+    border-radius: 8px !important;
+    margin-top: 24px;
+}
+
+table .ant-table-tbody .ant-table-row > td:nth-child(1) {
+    width: 10.82%;
+}
+
+table .ant-table-tbody .ant-table-row > td:nth-child(2) {
+    width: 25.6%;
+}
+
+table .ant-table-tbody .ant-table-row > td:nth-child(3) {
+    width: 19.49%;
+
+}
+
+table .ant-table-tbody .ant-table-row > td:nth-child(4) {
+    width: 10.82%;
+}
+
+table .ant-table-tbody .ant-table-row > td:nth-child(5) {
+    min-width: 24.25%;
+}
+table .ant-table-thead th.ant-table-cell {
+    border-radius: 8px;
+    /*overflow: hidden;*/
+    background: var(--color-neutrals-50);
+}
+.ant-table-column-sorters:has(div.dark-mode) {
+    background: var(--color-dark-2E2E) !important;
+}
+#table-product-dark-mode table .ant-table-thead th.ant-table-cell {
+    background: var(--color-dark-2E2E) !important;
+}
+table th.ant-table-cell .dark-mode {
+    background: var(--color-dark-2E2E) !important;
+}
+
+/*table .table-dark .ant-table-thead th.ant-table-cell.ant-table-column-has-sorters {*/
+/*    background: var(--color-dark-2E2E) !important;*/
+/*}*/
+
+
+.ant-table-wrapper .ant-table-column-sorter-up, .ant-table-column-sorter-down {
+    color: var(--color-neutrals-50);
+}
+
+.ant-table-thead .ant-table-column-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table th.ant-table-cell > div {
+    font-size: 16px;
+    color: var(--color-neutrals-50);
+    background: var(--color-neutrals-900);
+    padding: 8px 24px 8px 24px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    width: 100%;
+}
+
+table thead tr th {
+    border-bottom: none !important;
+}
+
+.ant-table-tbody > tr {
+    margin-bottom: 24px !important;
+}
+
+.ant-table-tbody > tr {
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.ant-table-tbody > tr > td {
+    border: none !important;
+}
+
+.ant-table-tbody > tr {
+    /*margin-top: 24px!important;*/
+}
+
+.ant-table-tbody > tr:hover {
+    box-shadow: 1px 0 8px 0 var(--color-box-shadow);
+    overflow: hidden;
+}
+
+#table-product-light-mode tbody tr.ant-table-row.ant-table-row-level-0 {
+    background: var(--color-neutrals-50);
+}
+#table-product-dar-mode .tbody tr.ant-table-row.ant-table-row-level-0 {
+    background: var(--color-dark-2E2E);
+}
+
+tbody .ant-table-row .ant-table-cell {
+    padding: 12px 16px 12px 17px !important;
+}
+
+#table-product-light-mode td.ant-table-cell {
+    background: var(--color-neutrals-50);
+    color: var(--color-semantics-grey01)
+}
+#table-product-dark-mode td.ant-table-cell {
+    background: transparent;
+    color: var(--color-neutrals-400)
+}
