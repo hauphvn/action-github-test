@@ -1,0 +1,11 @@
+name: First Wordflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeing
+        run: echo "Hello world"
+      - name: Printe goodbye
+        run: echo "Done - bye"
+    
